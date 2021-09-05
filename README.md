@@ -2,7 +2,7 @@
 
 #### Just Install The Php Script.. Its Easy With Zero Configuration
 
-## **This Workes Only On Indian Server And Localhost**
+## **This Works Only On Indian Server And Localhost**
 > 
 If You Don't Know JioID and Pass then Simply Open Following URL in Jio Network Connected Device
 http://api.jio.com/v2/users/me
