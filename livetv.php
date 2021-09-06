@@ -14,7 +14,13 @@ include "ip.php";
 <body data-new-gr-c-s-check-loaded="14.1012.0" data-gr-ext-installed="">
 	<div id="jtvh1">
 	<h1>Live TV</h1></div>
-  <center><div><button onclick="document.location='playlist.m3u'">Download Playlist</button></div></center>
+  <center><div><button onclick="document.location='playlist.m3u'">Download Playlist</button></div><br><br>
+  <div class="container-login100-form-btn m-t-17">
+						<button class="login100-form-btn" onclick="document.location='index.php'">
+							Homepage
+						</button>
+				</div>
+</center>
 <div id="content">
 <div class="container">
 <div id="list" class="row">

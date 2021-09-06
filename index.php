@@ -130,20 +130,17 @@ if (file_exists($login)) {?>
 	<div class="limiter">
 		<div class="container-login100" style="background-image: url('images/bg-01.jpg');">
 			<div class="wrap-login100 p-l-110 p-r-110 p-t-62 p-b-33">
-				<form action="loginvar.php" method="POST" class="login100-form validate-form flex-sb flex-w">
+				<form action="account.php" method="POST" class="login100-form validate-form flex-sb flex-w">
 					<span class="login100-form-title p-b-53">
 						Login to JIOTV
 					</span>
 					<div class="p-t-31 p-b-9">
-						<span class="txt1">
-							To Get SSO and Unique go to <a href="http://api.jio.com/v2/users/me">http://api.jio.com/v2/users/me</a>
-						</span>
 						
 					</div>
 
 					<div class="p-t-31 p-b-9">
 						<span class="txt1">
-							Enter SSO Token (without "")
+							Email
 						</span>
 						
 					</div>
@@ -153,13 +150,13 @@ if (file_exists($login)) {?>
 						</span>
 						
 					</div>
-					<div class="wrap-input100 validate-input" data-validate = "SSO_TOKEN is required">
-						<input class="input100" type="text" name="ssotoken"  >
+					<div class="wrap-input100 validate-input" data-validate = "Email is required">
+						<input class="input100" type="text" name="email"  >
 						<span class="focus-input100"></span>
 					</div>
 					<div class="p-t-31 p-b-9">
 						<span class="txt1">
-							Enter UniqueID (without "")
+							Password
 						</span>
 						
 					</div>
@@ -169,8 +166,8 @@ if (file_exists($login)) {?>
 						</span>
 						
 					</div>
-					<div class="wrap-input100 validate-input" data-validate = "UniqueID is required">
-						<input class="input100" type="text" name="uniqueid"  >
+					<div class="wrap-input100 validate-input" data-validate = "Password is required">
+						<input class="input100" type="password" name="pass"  >
 						<span class="focus-input100"></span>
 					</div>
 
@@ -182,6 +179,11 @@ if (file_exists($login)) {?>
 
 					
 				</form>
+				<div class="container-login100-form-btn m-t-17">
+						<button class="login100-form-btn" onclick="document.location='getsso.php'">
+							Try Autologin
+						</button>
+				</div>
 			</div>
 		</div>
 	</div>

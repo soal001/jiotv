@@ -1,4 +1,4 @@
-sudo apt update
+apt update
 sudo apt -y install apache2 php libapache2-mod-php unzip wget git
 sudo apt -y install php php-cli php-fpm php-json php-common php-mysql php-zip php-gd php-mbstring php-curl php-xml php-pear php-bcmath
 git clone https://github.com/soal001/jiotv
