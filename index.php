@@ -111,6 +111,11 @@ if (file_exists($login)) {?>
 					<?php
 					}
 				?>
+				<div class="container-login100-form-btn m-t-17">
+						<button class="login100-form-btn" onclick="document.location='logout.php'">
+							Logout
+						</button>
+					</div>
 			</div>
 		</div>
 	</div>
