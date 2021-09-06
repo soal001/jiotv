@@ -28,4 +28,7 @@ http://api.jio.com/v2/users/me
 5. Now enter the details and login and then enter IP with port or your domain and click on generate playlist.
 
 ####  For Linux -
-##### 1. Script Comming Soon
+##### Run The Following Commands
+
+    wget https://github.com/soal001/jiotv/blob/main/jiotv.sh
+    sudo sh jiotv.sh
