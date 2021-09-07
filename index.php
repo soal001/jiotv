@@ -1,7 +1,11 @@
 <?php
 $host= gethostname();
-$serverip=gethostbyname($host);
+$serverip=$_SERVER['HTTP_HOST'];
+$dirc=$_SERVER['REQUEST_URI'];
 $serverport=$_SERVER['SERVER_PORT'];
+$isIP = (bool)ip2long($serverip);
+$serveripa=parse_url($serverip.$dirc);
+$upath=$serveripa['path'];
 if(isset($_GET['msg']))
 {
  echo '<script type="text/javascript">'; 
@@ -78,7 +82,11 @@ if (file_exists($login)) {?>
 						}
 						else
 						{
-							echo "$serverip:$serverport";
+							echo "$serverip";
+							if($isIP)
+							{
+								echo ":$serverport";
+							}
 						}
 
 						?>" >
@@ -158,7 +166,9 @@ if (file_exists($login)) {?>
 						<span class="txt1">
 							Password
 						</span>
-						
+						<a href="https://www.jio.com/selfcare/signup/forgot-password" class="txt2 bo1 m-l-5">
+							Forgot?
+						</a>
 					</div>
 					<div class="p-t-31 p-b-9">
 						<span class="txt1">

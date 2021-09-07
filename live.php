@@ -1,9 +1,6 @@
 <?php
 session_start();
 
-
-
-
 header("Content-Type: application/vnd.apple.mpegurl");
 header("Access-Control-Allow-Origin: *");
 header("Access-Control-Expose-Headers: Content-Length,Content-Range");

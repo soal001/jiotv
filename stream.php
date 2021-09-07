@@ -5,10 +5,6 @@ include "logincred.php";
 $cont= 'http://'.$ip.'/token.php';
 $p= @file_get_contents($cont); 
 
-
-
-
-
 if(@$_REQUEST["key"]!="")
 {
 	$opts = [
