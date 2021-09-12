@@ -1,6 +1,6 @@
-apt update
-apt upgrade
-apt install -y php-apache git
+pkg update
+pkg upgrade
+pkg install -y php-apache git
 rm /data/data/com.termux/files/usr/etc/apache2/httpd.conf
 wget https://raw.githubusercontent.com/soal001/jiotv/master/httpd.conf
 mv httpd.conf /data/data/com.termux/files/usr/etc/apache2/
