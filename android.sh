@@ -7,4 +7,5 @@ wget https://github.com/soal001/jiotv/blob/main/httpd.conf
 cd /data/data/com.termux/files/usr/share/apache2/default-site/htdocs
 git clone https://github.com/soal001/jiotv
 cp -r jiotv/* ./ && rm -rf jiotv/
+rm http.conf android.sh jiotv.sh
 apachectl start
