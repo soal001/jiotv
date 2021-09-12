@@ -13,10 +13,8 @@ If You Don't Know JioID and Pass then Simply click on autologin button
 1. Install the Termux App from F-Droid [LINK](https://f-droid.org/repo/com.termux_117.apk "LINK")
 2. Run the Command-
 
-
-
-    wget https://github.com/soal001/jiotv/blob/main/android.sh
-    sh android.sh
+        wget https://github.com/soal001/jiotv/blob/main/jiotv.sh
+        sudo sh jiotv.sh
 
 3. Open Browser and go to [localhost:8080](http://localhost:8080 "localhost:8080"). To access it from other device just get the the ip of the device and add :8080 at the end of ip. Eg. 192.168.0.10:8080
 4. Now enter the details and login and then enter IP with port or your domain and click on generate playlist.
