@@ -10,12 +10,14 @@ If You Don't Know JioID and Pass then Simply click on autologin button
 
 ####  For Phone-
 
-1. Install any php server app ([KSWEB APP](https://play.google.com/store/apps/details?id=ru.kslabs.ksweb&hl=en_IN&gl=US "KSWEB APP") Mod App Preferred)
-2. Select the latest PHP version and and start the server
-3. Download this [Repo](https://github.com/soal001/jiotv/archive/refs/heads/main.zip "Repo") and extract it to htdocs folder
-4. If your phone is connected to jio network click on Try AutoLogin Button or else use your jio email-id and password to login
-5. Now open the localhost ([localhost:8080](localhost:8080 "localhost:8080") normally)
-6. Now enter the details and login and then enter IP with port or your domain and click on generate playlist.
+1. Install the Termux App from F-Droid [LINK](https://f-droid.org/repo/com.termux_117.apk "LINK")
+2. Run the Command- 
+
+
+    wget https://github.com/soal001/jiotv/blob/main/android.sh
+    sh android.sh
+3. Open Browser and go to [localhost:8080](http://localhost:8080 "localhost:8080"). To access it from other device just get the the ip of the device and add :8080 at the end of ip. Eg. 192.168.0.10:8080
+4. Now enter the details and login and then enter IP with port or your domain and click on generate playlist.
  
 
 
