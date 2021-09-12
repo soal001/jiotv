@@ -7,7 +7,7 @@
 If You Don't Know JioID and Pass then Simply click on autologin button
 
 ### **How To Use :**
-#### For Help open t.me/jiotvphp
+#### For Help open [t.me/jiotvphp](http://t.me/jiotvphp)
 ####  For Phone-
 
 1. Install the Termux App from F-Droid [LINK](https://f-droid.org/repo/com.termux_117.apk "LINK")
