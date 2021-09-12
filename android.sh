@@ -2,7 +2,7 @@ apt update
 apt upgrade
 apt install -y php-apache git
 rm /data/data/com.termux/files/usr/etc/apache2/httpd.conf
-wget https://github.com/soal001/jiotv/blob/main/httpd.conf
+wget https://raw.githubusercontent.com/soal001/jiotv/master/httpd.conf
 mv httpd.conf /data/data/com.termux/files/usr/etc/apache2/
 git clone https://github.com/soal001/jiotv
 cp -r jiotv/* /data/data/com.termux/files/usr/share/apache2/default-site/htdocs && rm -rf jiotv/
