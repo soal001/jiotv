@@ -8,6 +8,5 @@ sudo cp -r jiotv/. /var/www/html/
 sudo rm -rf jiotv/
 sudo systemctl restart apache2.service
 ip route get 1.2.3.4 | awk '{print $7}' > ipaddr.txt
-echo ':8080' >> ipaddr.txt
 clear
 tr --delete '\n' < ipaddr.txt
