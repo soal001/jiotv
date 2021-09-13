@@ -13,6 +13,7 @@ If You Don't Know JioID and Pass then Simply click on autologin button
 1. Install the Termux App from F-Droid [LINK](https://f-droid.org/repo/com.termux_117.apk "LINK")
 2. Run the Command-
 
+        pkg install wget -y
         wget https://raw.githubusercontent.com/soal001/jiotv/master/android.sh
         sh android.sh
 
@@ -31,5 +32,5 @@ If You Don't Know JioID and Pass then Simply click on autologin button
 ####  For Linux -
 ##### Run The Following Commands
 
-    wget https://raw.githubusercontent.com/soal001/jiotv/master/android.sh
+    wget https://raw.githubusercontent.com/soal001/jiotv/master/jiotv.sh
     sudo sh jiotv.sh
