@@ -77,7 +77,7 @@ if (file_exists($login)) {?>
 						
 						if (file_exists($ipw))
 						{
-							include "ip.php";
+							include $ipw;
 							echo $ip;
 						}
 						else
@@ -109,6 +109,33 @@ if (file_exists($login)) {?>
 						<div class="container-login100-form-btn m-t-17">
 						<button class="login100-form-btn" onclick="document.location='playlist.m3u'">
 							Download Playlist
+						</button>
+					</div>
+					<div class="container-login100-form-btn m-t-17">
+					<div class="wrap-input100 validate-input" data-validate = "Email is required">
+						<input class="input100" type="hidden" value="<?php 
+						
+						if (file_exists($ipw))
+						{
+							include $ipw;
+							echo $ip;
+							echo "/playlist.m3u";
+						}
+						else
+						{
+							echo "$serverip";
+							if($isIP)
+							{
+								echo ":$serverport";
+							}
+							echo "/playlist.m3u";
+						}
+
+						?>" name="copy_url" id="copy_url""  >
+						<span class="focus-input100"></span>
+					</div>
+						<button class="login100-form-btn" onclick="myFunction()">
+							Copy Playlist URL
 						</button>
 					</div>
 					<div class="container-login100-form-btn m-t-17">
@@ -203,6 +230,16 @@ if (file_exists($login)) {?>
 	<?php
 		}
 	?>
+	<script>
+		function myFunction() 
+		{
+			var copyText = document.getElementById("copy_url");
+			copyText.type = 'text';
+			copyText.select();
+			document.execCommand("copy");
+			copyText.type = 'hidden';
+		}
+	</script>
 <!--===============================================================================================-->
 	<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
 <!--===============================================================================================-->
