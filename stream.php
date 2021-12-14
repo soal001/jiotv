@@ -10,10 +10,10 @@ if(@$_REQUEST["key"]!="")
 	$opts = [
     "http" => [
         "method" => "GET",
-        "header" => "User-Agent: plaYtv/5.8.1 (Linux;Android 9) ExoPlayerLib/2.8.0\r\n" .
+        "header" => "User-Agent: JioTV\r\n" .
 		"lbcookie: 300\r\n" .
-"devicetype: Kodi\r\n" .
-"os: android\r\n" .
+"devicetype: phone\r\n" .
+"os: Android\r\n" .
 "appkey: NzNiMDhlYzQyNjJm\r\n" .
 "deviceId: 2f5f4c6443fe0800\r\n" .
 "versionCode: 226\r\n" .
