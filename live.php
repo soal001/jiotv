@@ -20,7 +20,7 @@ if($p!="" && @$_REQUEST["c"]!=""){
 $opts = [
     "http" => [
         "method" => "GET",
-        "header" => "User-Agent: plaYtv/5.3.2 (Linux;Android 5.1.1) ExoPlayerLib/2.3.0\r\n" 
+        "header" => "User-Agent: JioTV\r\n" 
 
     ]
 ];
