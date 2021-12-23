@@ -3,7 +3,7 @@ rm -rf /data/data/com.termux/files/usr/share/apache2/default-site/htdocs/
 mkdir /data/data/com.termux/files/usr/share/apache2/default-site/htdocs/
 cp -r jiotv/* /data/data/com.termux/files/usr/share/apache2/default-site/htdocs && rm -rf jiotv/
 rm /data/data/com.termux/files/usr/share/apache2/default-site/htdocs/httpd.conf /data/data/com.termux/files/usr/share/apache2/default-site/htdocs/android.sh /data/data/com.termux/files/usr/share/apache2/default-site/htdocs/jiotv.sh
-mkdir .termux/boot
+mkdir -p .termux/boot
 mv /data/data/com.termux/files/usr/share/apache2/default-site/htdocs/auto_boot.sh ./.termux/boot/
 apachectl start
 termux-wake-lock
