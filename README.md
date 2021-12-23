@@ -20,8 +20,11 @@ If You Don't Know JioID and Pass then Simply click on autologin button
 3. Open Browser and go to the address displayed on termux. Eg. 192.168.0.10:8080
 4. If your phone is connected to jio network click on Try AutoLogin Button or else use your jio email-id and password to login
 5. Check your IP and port or your domain and click on generate playlist.
- 
+6. To start termux on autoboot install Termux:Boot [LINK](https://f-droid.org/repo/com.termux.boot_7.apk "LINK")
+7. Enable Autostart for both Termux and Termux:Boot app from phone settings(Search app autostart or Auto-launch )
+8. To update Run the command -
 
+        sh update.sh
 
 ####  For Windows PC-
 1.  Install XAMPP
